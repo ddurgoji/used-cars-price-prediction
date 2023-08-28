@@ -1,5 +1,5 @@
 # Project Title
-What Drives the Price of a Car?
+What Drives the Price of a Used Car?
 
 ## Description
 This repo contains the CRISP-DM framework applied on Used car data set from [Kaggle](https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data)
@@ -96,6 +96,7 @@ Below are some of important technologies used in this project.
 * [Plotly](https://plotly.com)
 * [Seaborn](http://seaborn.pydata.org)
 * [Pandas](http://pandas.pydata.org)
+* [Scikit-learn](https://scikit-learn.org/stable/)
 and some more.
 
 
