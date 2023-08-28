@@ -61,12 +61,31 @@ In this project, i am trying to build various regression models which helps in p
   * Lasso Regression with CV, alphas = 10**np.linspace(10,-2,400) - Accuracy=63.008%
   * Random Forest Regression - Accuracy=91.142%
 Here is the table showing Performance/Accuracy of all above models. Random Forest Regression model was best performing model with 91% accuracy. </br></br>
-| Model Name                | Accuracy(%) |
-|---------------------------|-------------|
-|Linear Regression with RFE | 63.231%     |
-|Ridge Regression           | 63.244%     |
-|Lasso Regression           | 63.008%     |
-|Random Forest Regression   | 91.142%     |
+
+<table>
+    <thead>
+      <tr>
+        <th>words</th>
+        <th>transform to</th>
+        <th>keepUpperCase is false</th>
+        <th>keepUpperCase is true</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>"XML HTTP request"</td>
+            <td>pascalCase</td>
+            <td><code>XmlHttpRequest</code></td>
+            <td><code>XMLHTTPRequest</code></td>
+        </tr>
+        <tr>
+            <td>"new customer ID"</td>
+            <td>camelCase</td>
+            <td><code>newCustomerId</code></td>
+            <td><code>newCustomerID</code></td>
+        </tr>
+    </tbody>
+  </table>
 
 #### Evaluation
 * Random Forest Regression model had higher accuracy.
