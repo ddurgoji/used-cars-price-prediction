@@ -9,7 +9,7 @@ This repo contains the CRISP-DM framework applied on Used car data set from [Kag
 * [Readme](https://github.com/ddurgoji/used-cars-price-prediction/blob/main/README.md)
     * Project description
 * [Dataset](https://github.com/ddurgoji/used-cars-price-prediction/blob/main/data/vehicles.csv)
-    * This dataset is from [Kaggle](https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data). It is collected from Craiglist.
+    * This dataset is from [Kaggle](https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data). It is collected from Craiglist website.
 
 ## Summary
 #### Business Understanding
@@ -17,7 +17,7 @@ The prices of new cars are fixed by manufacturer with additonal cost like sales 
 
 Due to rising inflation in united states, People have less money to spend and this has caused used car demand to go up even higher. For consumer its very important to get a good quality car for the money they spend and its very important for Car dealership to build their inventory with good cars which helps them in increasing their revenue and also increase customer satisfaction.
 
-In this project, i am trying to build new regression models which helps in predicting used car prices and provide some insights to car dealership on what features customers value more.
+In this project, i am trying to build various regression models which helps in predicting used car prices with high accuracy and provide some insights to car dealership on what features customers value more and drives the car prices high.
 
 #### Data Understanding
 * Read CSV Dataset using Pandas.
@@ -58,6 +58,13 @@ In this project, i am trying to build new regression models which helps in predi
   * Ridge Regression with CV, alphas = 10**np.linspace(10,-2,400) - Accuracy=63.244%
   * Lasso Regression with CV, alphas = 10**np.linspace(10,-2,400) - Accuracy=63.008%
   * Random Forest Regression - Accuracy=91.142%
+Here is the table showing Performance/Accuracy of all above models. Random Forest Regression model was best performing model with 91% accuracy.
+| Model Name                | Accuracy(%) |
+|---------------------------|-------------|
+|Linear Regression with RFE | 63.231%     |
+|Ridge Regression           | 63.244%     |
+|Lasso Regression           | 63.008%     |
+|Random Forest Regression   | 91.142%     |
 
 #### Evaluation
 * Random Forest Regression model had higher accuracy.
@@ -77,14 +84,15 @@ In this project, i am trying to build new regression models which helps in predi
   * Size
   * Type
   * Paint color
+We can deploy a basic Django/Flask application which uses this function to show used car price prediction.
 
 #### Recommendation to Car dealership
-
 * Year, Odometer are most important items which consumers value most and determines price range of the car.
-* Diesel and Electric can sell for higher prices.
-* No of cylinders drive the car price up.
+* Diesel and Electric can sell for higher prices when compared to gas car.
+* Higher No of cylinders drive the car price up.
 * Title status and condition affects the prices. Salvaged cars are penalized more and brings down prices.
-* rwd are penalized more when compared to fwd/4wd.
+* rwd are penalized more when compared to fwd/4wd. Rwd cars have lower price points.
+* Automatic and other transmission type have higer price points and Manual reduces the car price.
 
 These are some of recommendation which car dealership can use to procure used car to drive sales up and provide great customer satisfaction.
 Complete details are in [Jupyter Notebook](https://github.com/ddurgoji/used-cars-price-prediction/blob/main/used-cars-price-prediction.ipynb).
