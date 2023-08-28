@@ -10,6 +10,8 @@ This repo contains the CRISP-DM framework applied on Used car data set from [Kag
     * Project description
 * [Dataset](https://github.com/ddurgoji/used-cars-price-prediction/blob/main/data/vehicles.csv)
     * This dataset is from [Kaggle](https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data). It is collected from Craiglist website.
+* [Images](https://github.com/ddurgoji/used-cars-price-prediction/tree/main/images)
+    * Contains images rendered inside Jupyter notebook.
 
 ## Summary
 #### Business Understanding
