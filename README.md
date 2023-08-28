@@ -65,24 +65,26 @@ Here is the table showing Performance/Accuracy of all above models. Random Fores
 <table>
     <thead>
       <tr>
-        <th>words</th>
-        <th>transform to</th>
-        <th>keepUpperCase is false</th>
-        <th>keepUpperCase is true</th>
+        <th>Model</th>
+        <th>Accuracy(%)</th>
       </tr>
     </thead>
     <tbody>
         <tr>
-            <td>"XML HTTP request"</td>
-            <td>pascalCase</td>
-            <td><code>XmlHttpRequest</code></td>
-            <td><code>XMLHTTPRequest</code></td>
+            <td>Linear Regression</td>
+            <td>63.231%</td>
         </tr>
         <tr>
-            <td>"new customer ID"</td>
-            <td>camelCase</td>
-            <td><code>newCustomerId</code></td>
-            <td><code>newCustomerID</code></td>
+            <td>Ridge Regression</td>
+            <td>63.244%</td>
+        </tr>
+        <tr>
+            <td>Lasso Regression</td>
+            <td>63.008%</td>
+        </tr>
+        <tr>
+            <td>Random Forest Regression</td>
+            <td>91.142%</td>
         </tr>
     </tbody>
   </table>
