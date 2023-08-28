@@ -60,7 +60,7 @@ In this project, i am trying to build various regression models which helps in p
   * Ridge Regression with CV, alphas = 10**np.linspace(10,-2,400) - Accuracy=63.244%
   * Lasso Regression with CV, alphas = 10**np.linspace(10,-2,400) - Accuracy=63.008%
   * Random Forest Regression - Accuracy=91.142%
-Here is the table showing Performance/Accuracy of all above models. Random Forest Regression model was best performing model with 91% accuracy.
+Here is the table showing Performance/Accuracy of all above models. Random Forest Regression model was best performing model with 91% accuracy. </br></br>
 | Model Name                | Accuracy(%) |
 |---------------------------|-------------|
 |Linear Regression with RFE | 63.231%     |
@@ -85,7 +85,7 @@ Here is the table showing Performance/Accuracy of all above models. Random Fores
   * Drive
   * Size
   * Type
-  * Paint color
+  * Paint color </br>
 We can deploy a basic Django/Flask application which uses this function to show used car price prediction.
 
 #### Recommendation to Car dealership
