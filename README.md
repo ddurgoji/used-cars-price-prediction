@@ -95,7 +95,7 @@ Here is the table showing Performance/Accuracy of all above models. Random Fores
 
 
 #### Deployment
-* Developed a Python function which accepts below features and provides price prediction using Random Forest Regression model.
+* Developed a Python function which accepts below inputs and provides price prediction using Random Forest Regression model.
   * Manufacturer
   * Model
   * Condition
@@ -108,6 +108,13 @@ Here is the table showing Performance/Accuracy of all above models. Random Fores
   * Type
   * Paint color </br>
 We can deploy a basic Django/Flask application which uses this function to show used car price prediction.
+
+
+#### Next Steps
+* Continue to analyse each features further and play with it to improve model performance.
+* Try to deploy a basic Flask/Django application to build e2e ML solution.
+* Apply XGBoost and other algorightm once we go through it in future modules.
+
 
 #### Recommendation to Car dealership
 * Year, Odometer are most important items which consumers value most and determines price range of the car.
