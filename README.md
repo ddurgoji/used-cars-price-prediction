@@ -107,8 +107,11 @@ Here is the table showing Performance/Accuracy of all above models. Random Fores
   * Size
   * Type
   * Paint color </br>
-We can deploy a basic Django/Flask application which uses this function to show used car price prediction.
 
+Deployed the Model on Digital Ocean via Flask Server. Below sample API can be used to get used car price prediction.
+```json
+curl -H "content-type: application/json" http://164.90.154.175:8000/predict -X POST -d '{"year": 2022, "manufacturer": "tesla", "model": "model s", "condition": "good", "cylinders": "5 cylinders", "fuel": "electric", "odometer": 3996, "title_status": "clean", "transmission": "other", "drive": "4wd", "size": "full-size", "type": "sedan", "paint_color": "white" }'
+```
 
 #### Next Steps
 * Continue to analyse each features further and play with it to improve model performance.
