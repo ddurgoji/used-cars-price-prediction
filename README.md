@@ -115,8 +115,7 @@ curl -H "content-type: application/json" http://164.90.154.175:8000/predict -X P
 
 #### Next Steps
 * Continue to analyse each features further and play with it to improve model performance.
-* Try to deploy a basic Flask/Django application to build e2e ML solution.
-* Apply XGBoost and other algorightm once we go through it in future modules.
+* Apply XGBoost and other algorightm as i learn.
 
 
 #### Recommendation to Car dealership
